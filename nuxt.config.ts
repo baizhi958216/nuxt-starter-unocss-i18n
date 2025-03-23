@@ -1,4 +1,3 @@
-import { resolve } from 'path'
 import Aura from '@primeuix/themes/aura'
 import { appDescription } from './app/constants/index'
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -49,7 +48,7 @@ export default defineNuxtConfig({
       { code: 'zh-TW', iso: 'zh-TW', file: 'zh-TW.json', name: '繁體中文' },
       { code: 'en', iso: 'en-US', file: 'en-US.json', name: 'English' },
       { code: 'ja', iso: 'ja-JP', file: 'ja-JP.json', name: '日本語' },
-      { code: 'ko', iso: 'ko-KR', file: 'ko-KR.json', name: '한국어' }
+      { code: 'ko', iso: 'ko-KR', file: 'ko-KR.json', name: '한국어' },
     ],
     defaultLocale: 'zh',
     lazy: true,
@@ -74,7 +73,7 @@ export default defineNuxtConfig({
         { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
         { name: 'theme-color', media: '(prefers-color-scheme: light)', content: 'white' },
         { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#222222' },
-      ]
+      ],
     },
   },
 
