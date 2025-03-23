@@ -1,0 +1,9 @@
+{
+  // Required in vscode-eslint < v3.0.10 only
+  "eslint.useFlatConfig": true,
+  "editor.formatOnSave": true,
+  // nolonger use Prettier
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  }
+}
