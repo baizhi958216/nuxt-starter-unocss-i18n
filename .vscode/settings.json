@@ -4,6 +4,10 @@
   "editor.formatOnSave": true,
   // nolonger use Prettier
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
+    "source.fixAll.eslint": "never"
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "nuxt.config.ts": "tsconfig.json, *.config.ts,*.config.mjs,*.config.cjs,*.config.js"
   }
 }

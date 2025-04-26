@@ -1,5 +1,5 @@
-import Aura from '@primeuix/themes/aura'
 import { appDescription } from './app/constants/index'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
@@ -12,7 +12,6 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@primevue/nuxt-module',
     '@unocss/nuxt',
     '@nuxtjs/i18n',
   ],
@@ -28,19 +27,6 @@ export default defineNuxtConfig({
     '@/assets/styles/index.scss',
     '@/assets/styles/override.scss',
   ],
-
-  primevue: {
-    /* Configuration */
-    options: {
-      theme: {
-        preset: Aura,
-      },
-    },
-    components: {
-      // issues: https://github.com/primefaces/primevue/issues/7434
-      exclude: ['Form', 'FormField'],
-    },
-  },
 
   i18n: {
     locales: [
